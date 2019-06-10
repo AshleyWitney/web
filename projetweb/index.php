@@ -48,18 +48,6 @@
 
 
             <?php
-            /*
-            //creer connexion To the BD
-            $dsn = 'mysql:dbname=admin;host=127.0.0.1';
-            $user = 'root';
-            $password = '';
-
-            try {
-                $dbh = new PDO($dsn, $user, $password);
-            } catch (PDOException $e) {
-                echo 'Connexion échouée : ' . $e->getMessage();
-            }
-*/
             $bbd = 'pgsql:host=localhost;dbname=portfolio';
             $user = 'postgres';
             $password = 'FLORENCE5345_a';
@@ -71,7 +59,7 @@
             }
             ?>
             <?php
-            $stmt = $dbh->query('SELECT * FROM portfolio.apropos');
+            $stmt = $dbh->query('SELECT * FROM mon_schemas.apropos');
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
                 ?>
 

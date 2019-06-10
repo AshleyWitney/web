@@ -11,21 +11,6 @@ $dbh = new PDO($dsn, $user, $password);
 echo 'Connexion échouée : ' . $e->getMessage();
 }
 */
-
-
-/*
-//creer connexion To the BD
-$dsn = 'mysql:dbname=formulaire;host=127.0.0.1';
-$user = 'root';
-$password = '';
-
-try {
-    $dbh = new PDO($dsn, $user, $password);
-} catch (PDOException $e) {
-    echo 'Connexion échouée : ' . $e->getMessage();
-}
-*/
-
 $bbd = 'pgsql:host=localhost;dbname=portfolio';
 $user = 'postgres';
 $password = 'FLORENCE5345_a';
@@ -42,6 +27,7 @@ $sql = "INSERT INTO mon_schemas.contact (prenom,nom,message,email) VALUES (?,?,?
 $stmt = $dbh->prepare($sql);
 //Executer la requete
 $stmt->execute([$_GET['prenom'], $_GET['nom'], $_GET['message'], $_GET['email']]);
+
 
 /*} else {
 $sth = $dbh->prepare("
