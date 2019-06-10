@@ -38,7 +38,7 @@ try {
 
 //Preparer requete d'insertion
 
-$sql = "INSERT INTO mon_schemas.apropos (description) VALUES (?)";
+$sql = "INSERT INTO portfolio.apropos (description) VALUES (?)";
 $stmt = $dbh->prepare($sql);
 //Executer la requete
 $stmt->execute([$_GET['description']]);

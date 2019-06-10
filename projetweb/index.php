@@ -71,7 +71,7 @@
             }
             ?>
             <?php
-            $stmt = $dbh->query('SELECT * FROM mon_schemas.apropos');
+            $stmt = $dbh->query('SELECT * FROM portfolio.apropos');
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
                 ?>
 
