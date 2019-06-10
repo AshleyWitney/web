@@ -1,20 +1,3 @@
-<?php
-
-session_start();
-require_once '_functions.php';
-
-if(isset($_GET['page'])) {
-    $page = $_GET['page'];
-}else {
-    $page = "";
-
-}
-
-
-
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,7 +62,7 @@ if(isset($_GET['page'])) {
 */
             $bbd = 'pgsql:host=localhost;dbname=portfolio';
             $user = 'postgres';
-            $password = '';
+            $password = 'FLORENCE5345_a';
             try {
                 $dbh = new PDO($bbd, $user, $password);
             } catch (PDOException $e) {
@@ -499,81 +482,6 @@ switch ($page) {
 }
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
