@@ -1,7 +1,7 @@
 <?php
 $bbd = 'pgsql:host=localhost;dbname=portfolio';
 $user = 'postgres';
-$password = 'azerty';
+$password = 'FLORENCE5345_a';
 try {
     $dbh = new PDO($bbd, $user, $password);
 } catch (PDOException $e) {

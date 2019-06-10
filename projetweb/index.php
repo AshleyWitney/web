@@ -260,7 +260,7 @@
 
         <!-- Pour le bloc des projets -->
         <div class="projets">
-            <h1 id="projet"> Projets </h1>
+
         </div>
 
             <!-- Pour le bloc formation et compétences -->
@@ -323,11 +323,6 @@
                             <?= $row['techno1']; ?>
                         </p>
                         <p>
-                            <?= $row['techno2']; ?>
-                        </p>
-                        <p>
-                            <?= $row['techno3']; ?>
-                        </p>
                     <?php
                     endwhile;
                     ?>
@@ -343,14 +338,9 @@
                         ?>
 
                         <p>
-                            <?= $row['techno1']; ?>
-                        </p>
-                        <p>
                             <?= $row['techno2']; ?>
                         </p>
-                        <p>
-                            <?= $row['techno3']; ?>
-                        </p>
+
                     <?php
                     endwhile;
                     ?>
@@ -364,12 +354,7 @@
                     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)):
                         ?>
 
-                        <p>
-                            <?= $row['techno1']; ?>
-                        </p>
-                        <p>
-                            <?= $row['techno2']; ?>
-                        </p>
+
                         <p>
                             <?= $row['techno3']; ?>
                         </p>
@@ -464,24 +449,6 @@
 <script src="main.js"></script>
 
 
-<?php
-
-switch ($page) {
-    case 'acceuil':
-        require_once '_acceuil.php';
-        break;
-    case 'creer':
-        require_once '_creer.php';
-        break;
-    case 'evenement':
-        require_once '_evenement.php';
-        break;
-    case 'liste':
-        require_once '_liste.php';
-        break;
-}
-
-?>
 
 </body>
 </html>

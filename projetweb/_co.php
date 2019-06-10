@@ -129,6 +129,9 @@ if(isset($_GET['page'])) {
                 <h3>Compétances</h3>
                 <a href="competance.php"><button type="button" class="btn btn-outline-primary">Modifier</button></a>
 
+                <h3>Langue</h3>
+                <a href="langue.php"><button type="button" class="btn btn-outline-primary">Modifier</button></a>
+
                 <h3>Loisirs</h3>
                 <a href="loisir.php"><button type="button" class="btn btn-outline-primary">Modifier</button></a>
                 <h3>Techno</h3>
